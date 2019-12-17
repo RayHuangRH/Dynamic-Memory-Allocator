@@ -1,12 +1,12 @@
 # Dynamic-Memory-Allocator
 
-Implemented my own verion of the free, malloc and realloc funcations in C with the following properties:
-Free lists segregated by size class, using first-fit policy within each size class. 
-Immediate coalescing of blocks on free with adjacent free blocks. 
-Boundary tags to support efficient coalescing. Block splitting without creating splinters. 
-Allocated blocks aligned to "double memory row" (16-byte) boundaries. 
-Free lists maintained using last in first out (LIFO) discipline. 
-Obfuscation of block footers to detect attempts to free blocks not previously obtained via allocation.   
+Implemented my own verion of the free, malloc and realloc funcations in C with the following properties:  
+Free lists segregated by size class, using first-fit policy within each size class.  
+Immediate coalescing of blocks on free with adjacent free blocks.  
+Boundary tags to support efficient coalescing. Block splitting without creating splinters.  
+Allocated blocks aligned to "double memory row" (16-byte) boundaries.  
+Free lists maintained using last in first out (LIFO) discipline.  
+Obfuscation of block footers to detect attempts to free blocks not previously obtained via allocation.    
 
 This code was written for CSE-320 at Stony Brook University. All code here is property of Stony Brook University and myself and is not to be copied/redistributed without consent.
 
